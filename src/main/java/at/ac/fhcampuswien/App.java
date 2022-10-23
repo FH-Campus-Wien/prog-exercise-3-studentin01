@@ -18,6 +18,7 @@ public class App {
         // Beispiel 3.
         int numToGuess = randomNumberBetweenOneAndHundred();
         guessingGame(numToGuess);
+
         // Beispiel 4.
         int[] array1 = new int[]{1, 2, 3, 4, 5};
         int[] array2 = new int[]{100, 99, 60, 44, 2};
@@ -28,7 +29,6 @@ public class App {
         int arrayLength = (amountOfDays - 1) + startDay;
         int[] field = new int[arrayLength];
         int j = 1;
-
 
         for (int i = startDay - 1; i < field.length; i++) {
             field[i] = j;
@@ -64,7 +64,7 @@ public class App {
     }
 
     public static void guessingGame(int numToGuess) {
-        if (numToGuess > 100 && numToGuess < 1) {
+        if (numToGuess > 100 || numToGuess < 1) {
             System.out.println("Please enter number between 1 and 100");
             return;
         }
