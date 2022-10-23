@@ -46,7 +46,6 @@ public class App {
             }
         }
     }
-
     public static long[] lcg(long seed) {
         long[] resultArray = new long[10];
         for (int i = 0; i < resultArray.length; i++) {
