@@ -7,18 +7,18 @@ import java.util.Scanner;
 public class App {
     // Implement all methods as public static
     public static void main(String[] args) {
-        // Beispiel 1.
-        // oneMonthCalendar(31, 3);
+        //Beispiel 1.
+        oneMonthCalendar(31, 3);
 
         // Beispiel 2.
-       /* long[] results = lcg(70); // testen der Methode
+        long[] results = lcg(70); // testen der Methode
         for (int i = 0; i < results.length; i++) {
             System.out.println(results[i]);
         }
-        Beispiel 3.
+        // Beispiel 3.
         int numToGuess = randomNumberBetweenOneAndHundred();
-        guessingGame(numToGuess);*/
-// Beispiel 4.
+        guessingGame(numToGuess);
+        // Beispiel 4.
         int[] array1 = new int[]{1, 2, 3, 4, 5};
         int[] array2 = new int[]{100, 99, 60, 44, 2};
         swapArrays(array1, array2);
@@ -46,6 +46,7 @@ public class App {
             }
         }
     }
+
     public static long[] lcg(long seed) {
         long[] resultArray = new long[10];
         for (int i = 0; i < resultArray.length; i++) {
